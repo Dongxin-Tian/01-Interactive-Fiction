@@ -59,8 +59,18 @@ def update(current, game_desc, choice):
             first = False
     return current
 
+def renderStatus():
+    weapon = ""
+    if haveGun:
+        weapon = "M1911 " + str(bullet) + " rounds"
+    else:
+        weapon = "None"
+    print("Weapon: [" + weapon + "]   Health: " + str(hp))
+
 def render(current):
+    print("\n\n\n\n\n\n\n")
     print(format_passage(current["text"]))
+    renderStatus()
 
 def get_input(current):
     choice = input("What would you like to do? (type quit to exit) ")
@@ -83,10 +93,11 @@ def Battle():
         while zombieHp > 0:
             if haveGun == True and bullet > 0:
                 attackSelection = "shoot"
-                print("[ (1)Shoot ]\n[ (2)Try to flee ]")
+                print("[1.Shoot]\n[2.Try to flee]")
             else:
                 attackSelection = "punch"
-                print("[ (1)Punch ]\n[ (2)Try to flee]")
+                print("[1.Punch ]\n[2.Try to flee]")
+            renderStatus()
             choice = input("What would you like to do next? (type quit to exit) ").lower()
             if choice == attackSelection or choice == "1":
                 if attackSelection == "shoot":
@@ -139,7 +150,7 @@ def main():
     while choice != "quit" and current != {} and end == False:
         result = True
         current = update(current, game_desc, choice)
-        if "You are in your apartment." in str(current) or "You walked out of the apartment" in str(current) or "What are you going to do now?" in str(current) or "You tried to call the police" in str(current):
+        if "You are in your apartment." in str(current) or "You walked out of the apartment" in str(current) or "What are you going to do now?" in str(current) or "You tried to call the police" in str(current) or "The subway station is unusually quiet" in str(current) or "You walked down the railway all the way" in str(current) or "You arrive at the city square station" in str(current):
             render(current)
             choice = get_input(current)
         elif "You picked up your M1911A1" in str(current):

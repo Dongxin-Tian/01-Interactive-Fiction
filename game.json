@@ -1,10 +1,10 @@
 {
   "passages": [
     {
-      "text": "You are in your apartment. At this time, a zombie virus outbreak in your city was reported on TV. The government claimed that there was an evacuation point is in a middle school in the south of the city. \n\n[ (1)Prepare to take refuge ]",
+      "text": "You are in your apartment. At this time, a zombie virus outbreak in your city was reported on TV. The government claimed that there was an evacuation point is in a middle school in the south of the city. \n\n[1.Prepare to take refuge]",
       "links": [
         {
-          "name": "Prepare to take refuge",
+          "name": "1.Prepare to take refuge",
           "link": "Prepare",
           "pid": "5"
         }
@@ -17,15 +17,15 @@
       }
     },
     {
-      "text": "You picked up your M1911A1, there are 7 rounds in the magazine.\n\n[ (1)Keep preparing ]\n[ (2)Leave the apartment ]",
+      "text": "You picked up your M1911A1, there are 7 rounds in the magazine.\n\n[1.Keep preparing]\n[2.Leave the apartment]",
       "links": [
         {
-          "name": "Keep preparing",
+          "name": "1.Keep preparing",
           "link": "Prepare",
           "pid": "5"
         },
         {
-          "name": "Leave the apartment",
+          "name": "2.Leave the apartment",
           "link": "Streets",
           "pid": "3"
         }
@@ -38,17 +38,22 @@
       }
     },
     {
-      "text": "You walked out of the apartment, and the street was a mess, full of screams. There are two ways to go to the evacuation point, one is towards the park and the other is towards the main street. Where are you going?\n\n[ (1)Go to the park ]\n[ (2)Go to the main streets ]",
+      "text": "You walked out of the apartment, and the street was a mess, full of screams. There are two ways to go to the evacuation point, one is towards the park and the other is towards the main street. Where are you going?\n\n[1.Go to the park]\n[2.Go to the main streets]\n[3.Go to the subway station]",
       "links": [
         {
-          "name": "Go to the park",
+          "name": "1.Go to the park",
           "link": "Park",
           "pid": "6"
         },
         {
-          "name": "Go to the main streets",
+          "name": "2.Go to the main streets",
           "link": "Main Streets",
           "pid": "7"
+        },
+        {
+          "name": "3.Go to the subway station",
+          "link": "Subway",
+          "pid": "10"
         }
       ],
       "name": "Streets",
@@ -59,15 +64,15 @@
       }
     },
     {
-      "text": "You tried to call the police, but no one answered.\n\n[ (1)Keep preparing ]\n[ (2)Leave the apartment ]",
+      "text": "You tried to call the police, but no one answered.\n\n[1.Keep preparing]\n[2.Leave the apartment]",
       "links": [
         {
-          "name": "Keep preparing",
+          "name": "1.Keep preparing",
           "link": "Prepare",
           "pid": "5"
         },
         {
-          "name": "Leave the apartment",
+          "name": "2.Leave the apartment",
           "link": "Streets",
           "pid": "3"
         }
@@ -80,20 +85,20 @@
       }
     },
     {
-      "text": "What are you going to do now?\n\n[ (1)Pick up your gun ]\n[ (2)Leave your apartment ]\n[ (3)Call the police for help]",
+      "text": "What are you going to do now?\n\n[1.Pick up your gun]\n[2.Leave your apartment]\n[3.Call the police for help]",
       "links": [
         {
-          "name": "Pick up your gun",
+          "name": "1.Pick up your gun",
           "link": "Get Gun",
           "pid": "2"
         },
         {
-          "name": "Leave your apartment",
+          "name": "2.Leave your apartment",
           "link": "Streets",
           "pid": "3"
         },
         {
-          "name": "Call the police for help",
+          "name": "3.Call the police for help",
           "link": "Call Police",
           "pid": "4"
         }
@@ -106,15 +111,15 @@
       }
     },
     {
-      "text": "You have reached the park now, there are many zombies wandering around here.\n\n[ (1)Keep going ]\n[ (2)Go back ]",
+      "text": "You have reached the park now, there are many zombies wandering around here.\n\n[1.Keep going]\n[2.Go back]",
       "links": [
         {
-          "name": "Keep going",
+          "name": "1.Keep going",
           "link": "Main Streets",
           "pid": "7"
         },
         {
-          "name": "Go back",
+          "name": "2.Go back",
           "link": "Streets",
           "pid": "3"
         }
@@ -127,15 +132,15 @@
       }
     },
     {
-      "text": "You are now on the main streets, and many people are fleeing in the direction of the mall.\n\n[ (1)Follow them to the mall ]\n[ (2)Go back ]",
+      "text": "You are now on the main streets, and many people are fleeing in the direction of the mall.\n\n[1.Follow them to the mall]\n[2.Go back]",
       "links": [
         {
-          "name": "Follow them to the mall",
+          "name": "1.Follow them to the mall",
           "link": "Mall",
           "pid": "8"
         },
         {
-          "name": "Go back",
+          "name": "2.Go back",
           "link": "Streets",
           "pid": "3"
         }
@@ -148,15 +153,15 @@
       }
     },
     {
-      "text": "You are in the mall now, and the helicopter in the sky broadcasts people to hurry up to the school to take refuge.\n\n[ (1)Go to the school ]\n[ (2)Go back ]",
+      "text": "You are in the mall now, and the helicopter in the sky broadcasts people to hurry up to the school to take refuge.\n\n[1.Go to the school]\n[2.Go back]",
       "links": [
         {
-          "name": "Go to the school",
+          "name": "1.Go to the school",
           "link": "Escape",
           "pid": "9"
         },
         {
-          "name": "Go back",
+          "name": "2.Go back",
           "link": "Main Streets",
           "pid": "7"
         }
@@ -175,6 +180,169 @@
       "position": {
         "x": "435",
         "y": "771"
+      }
+    },
+    {
+      "text": "The subway station is unusually quiet, it seems that there will be no zombies here temporarily. However, due to the virus outbreak, the subway has ceased operation. Maybe walking along the railway is a good choice.\n\n[1.Walk along the railway]\n[2.Go back]\n\n",
+      "links": [
+        {
+          "name": "1.Walk along the railway",
+          "link": "Mall station",
+          "pid": "11"
+        },
+        {
+          "name": "2.Go back",
+          "link": "Streets",
+          "pid": "3"
+        }
+      ],
+      "name": "Subway",
+      "pid": "10",
+      "position": {
+        "x": "200",
+        "y": "197"
+      }
+    },
+    {
+      "text": "You walked down the railway all the way, and you don't know how long you have been. When you realize, you have reached the subway station of the mall.\n\n[1.Keep going]\n[2.Go to the mall]",
+      "links": [
+        {
+          "name": "1.Keep going",
+          "link": "City Plaza station",
+          "pid": "13"
+        },
+        {
+          "name": "2.Go to the mall",
+          "link": "Mall",
+          "pid": "8"
+        }
+      ],
+      "name": "Mall station",
+      "pid": "11",
+      "position": {
+        "x": "83",
+        "y": "621"
+      }
+    },
+    {
+      "text": "You arrive at City Plaza, and the situation here is much worse than you thought. The distance from the school to the evacuation point is about two kilometers. Maybe it's safer to walk in a small alley? But it should be faster if you go down the city center.\n\n[1.Walk in the alley]\n[2.Go to the city center]",
+      "links": [
+        {
+          "name": "1.Walk in the alley",
+          "link": "Alley1",
+          "pid": "14"
+        },
+        {
+          "name": "2.Go to the city center",
+          "link": "City Center",
+          "pid": "15"
+        }
+      ],
+      "name": "City Plaza",
+      "pid": "12",
+      "position": {
+        "x": "161",
+        "y": "1061"
+      }
+    },
+    {
+      "text": "You arrive at the city square station. The railway in front is blocked and you can no longer walk along the railway. It seems that the only option is to get out of here.\n\n[1.Get out of the subway station]",
+      "links": [
+        {
+          "name": "1.Get out of the subway station",
+          "link": "City Plaza",
+          "pid": "12"
+        }
+      ],
+      "name": "City Plaza station",
+      "pid": "13",
+      "position": {
+        "x": "134",
+        "y": "738"
+      }
+    },
+    {
+      "text": "You are walking in a small alley, there are also some zombies walking around here. At this time, you are surrounded and cannot go back.\n\n[1.Turn left]\n[2.Trun Right]",
+      "links": [
+        {
+          "name": "1.Turn left",
+          "link": "Alley Left",
+          "pid": "16"
+        },
+        {
+          "name": "2.Trun Right",
+          "link": "Alley Right",
+          "pid": "17"
+        }
+      ],
+      "name": "Alley1",
+      "pid": "14",
+      "position": {
+        "x": "18",
+        "y": "945"
+      }
+    },
+    {
+      "text": "You have been walking for a long time and you already feel exhausted. But the good news is that the school is ahead!\n\n[1.Go to the school]\n[2.Go back]",
+      "links": [
+        {
+          "name": "1.Go to the school",
+          "link": "Escape",
+          "pid": "9"
+        },
+        {
+          "name": "2.Go back",
+          "link": "City Plaza",
+          "pid": "12"
+        }
+      ],
+      "name": "City Center",
+      "pid": "15",
+      "position": {
+        "x": "335",
+        "y": "933"
+      }
+    },
+    {
+      "text": "You run to the left. There are three roads here, but you don’t have time to see where these intersections lead.\n\n[1.Go straight]\n[2.Go left]\n[3.Go right]",
+      "links": [
+        {
+          "name": "1.Go straight",
+          "link": "Mall",
+          "pid": "8"
+        },
+        {
+          "name": "2.Go left",
+          "link": "Alley1",
+          "pid": "14"
+        },
+        {
+          "name": "3.Go right",
+          "link": "City Center",
+          "pid": "15"
+        }
+      ],
+      "name": "Alley Left",
+      "pid": "16",
+      "position": {
+        "x": "217",
+        "y": "858"
+      }
+    },
+    {
+      "text": "You run to the right, but this is a dead end!\n\n[1.Go back]",
+      "links": [
+        {
+          "name": "1.Go back",
+          "link": "Alley1",
+          "pid": "14"
+        }
+      ],
+      "name": "Alley Right",
+      "pid": "17",
+      "position": {
+        "x": "0",
+        "y": "761"
       }
     }
   ],
